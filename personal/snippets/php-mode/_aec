@@ -1,0 +1,2 @@
+any_edge_connect(${\$subject_id}, array('role' => ${predicate}, 'child_id' => ${\$subject_id}));
+$0

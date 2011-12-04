@@ -1,0 +1,3 @@
+$manager = ModuleManager::instance();
+$result  = $manager->callMethod('${1:interface}::${2:method}'$3);
+$0

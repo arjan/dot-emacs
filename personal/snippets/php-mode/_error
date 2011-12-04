@@ -1,0 +1,2 @@
+trigger_error('${1:Descriptive error message}', E_USER_WARNING);
+throw new Anymeta_HttpStatus(Anymeta_HttpStatus::HTTP_INTERNAL_SERVER_ERROR, array('message' => '$1'));$0

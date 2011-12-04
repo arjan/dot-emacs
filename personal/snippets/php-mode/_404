@@ -1,0 +1,1 @@
+throw new Anymeta_HttpStatus(Anymeta_HttpStatus::HTTP_NOT_FOUND);$0

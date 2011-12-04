@@ -1,0 +1,2 @@
+mail('arjan@mediamatic.nl', '${subject}', var_export(${var}, true));
+$0

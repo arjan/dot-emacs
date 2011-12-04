@@ -1,0 +1,2 @@
+any_curl('http://localhost:9090/debug', '*/*', 'POST', array(), '${1:var}'."\n".var_export(\$$1, true));
+$0

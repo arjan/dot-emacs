@@ -1,0 +1,2 @@
+{page_${1:name}, ${2:text}, [{title, <<"${3:Page title}">>}, {page_path, <<"${4:/url}">>}]},
+$0

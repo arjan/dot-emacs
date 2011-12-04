@@ -71,7 +71,7 @@
                                          try-complete-lisp-symbol))
 
 ;; smart indenting and pairing for all
-(electric-pair-mode t)
+;;(electric-pair-mode t)
 (electric-indent-mode t)
 (electric-layout-mode t)
 
@@ -100,7 +100,7 @@
 
 ;; save recent files
 (setq recentf-save-file (concat user-emacs-directory "recentf")
-      recentf-max-saved-items 200
+      recentf-max-saved-items 5000
       recentf-max-menu-items 15)
 (recentf-mode t)
 
@@ -114,11 +114,11 @@
 
 ;; use shift + arrow keys to switch between visible buffers
 (require 'windmove)
-(windmove-default-keybindings 'super)
+(windmove-default-keybindings 'shift)
 
 ;; show-paren-mode: subtle highlighting of matching parens
 (show-paren-mode t)
-(setq show-paren-style 'parenthesis)
+(setq show-paren-style 'expression)
 
 ;; highlight the current line
 (global-hl-line-mode +1)
@@ -129,7 +129,7 @@
 (setq tramp-default-method "ssh")
 
 ;; ido-mode
-(ido-mode t)
+(ido-mode nil)
 (setq ido-enable-prefix nil
       ido-enable-flex-matching t
       ido-create-new-buffer 'always
@@ -138,7 +138,7 @@
       ido-default-file-method 'selected-window)
 
 ;; auto-completion in minibuffer
-(icomplete-mode +1)
+;(icomplete-mode +1)
 
 (set-default 'imenu-auto-rescan t)
 

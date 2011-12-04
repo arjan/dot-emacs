@@ -1,0 +1,2 @@
+{$1, ${2:text}, [{title, <<"${3:Category title}">>}]},
+$0

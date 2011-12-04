@@ -1,0 +1,6 @@
+<!ENTITY ${1:name}.label
+    "${label}">
+<!ENTITY ${1:name}.description
+    "${description}">
+
+$0

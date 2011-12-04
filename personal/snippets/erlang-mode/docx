@@ -1,0 +1,2 @@
+%% @doc ${1:Does the thing thing}
+${2: %%@spec ${3:foo() -> ok.}}

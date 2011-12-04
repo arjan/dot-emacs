@@ -1,0 +1,10 @@
+<?php
+
+require_once '../anymeta.php';
+
+global $any_acl;
+$any_acl->request_allows_set(true);
+
+$0
+
+?>
