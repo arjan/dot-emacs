@@ -55,15 +55,10 @@
 (require 'yaml-mode)
 (add-to-list 'auto-mode-alist '("\\.yml$" . yaml-mode))
 
-; TODO fix ruby-end and package ruby-block for marmalade
-(require 'ruby-block)
-(require 'ruby-end)
-
 (defun prelude-ruby-mode-hook ()
   (inf-ruby-keys)
   ;; turn off the annoying input echo in irb
   (setq comint-process-echoes t)
-  (ruby-block-mode t)
   (local-set-key (kbd "C-h r") 'yari))
 
 (add-hook 'ruby-mode-hook 'prelude-ruby-mode-hook)

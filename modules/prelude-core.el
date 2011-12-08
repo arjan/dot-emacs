@@ -320,13 +320,14 @@ there's a region, all lines that region covers will be duplicated."
 
 (defun prelude-prog-mode-hook ()
   "Default coding hook, useful with any programming language."
-  (flyspell-prog-mode)
-  (prelude-local-comment-auto-fill)
-  (prelude-turn-on-whitespace)
+;;  (flyspell-prog-mode)
+;;  (prelude-local-comment-auto-fill)
+;;  (prelude-turn-on-whitespace)
   (prelude-turn-on-abbrev)
   (prelude-add-watchwords)
   ;; keep the whitespace decent all the time
-  (add-hook 'before-save-hook 'whitespace-cleanup nil t))
+ ;; (add-hook 'before-save-hook 'whitespace-cleanup nil t)
+)
 
 ;; in Emacs 24 programming major modes generally derive
 ;; from a common mode named prog-mode
