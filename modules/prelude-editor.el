@@ -163,15 +163,11 @@
       bookmark-save-flag 1)
 
 ;; enabled auto-fill mode in text-mode and all related modes
-(add-hook 'text-mode-hook 'turn-on-auto-fill)
+;;(add-hook 'text-mode-hook 'turn-on-auto-fill)
 
 ;; load yasnippet
 (require 'yasnippet)
 (yas/initialize)
-
-;; projectile is a project management mode
-(require 'projectile)
-(projectile-global-mode t)
 
 ;; dired - reuse current buffer by pressing 'a'
 (put 'dired-find-alternate-file 'disabled nil)

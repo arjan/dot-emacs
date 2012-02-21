@@ -1,0 +1,59 @@
+
+-behaviour(gen_server).
+
+%% gen_server exports
+-export([init/1, handle_call/3, handle_cast/2, handle_info/2, terminate/2, code_change/3]).
+-export([start_link/0, start_link/1]).
+
+%% interface functions
+-export([
+]).
+
+
+%%====================================================================
+%% API
+%%====================================================================
+%% @spec start_link() -> {ok,Pid} | ignore | {error,Error}
+%% @doc Starts the server
+start_link() -> 
+    start_link([]).
+start_link(Args) when is_list(Args) ->
+    gen_server:start_link({local, ?MODULE}, ?MODULE, Args, []).
+
+
+%%====================================================================
+%% gen_server callbacks
+%%====================================================================
+
+%% @doc Initiates the server.
+init(_Args) ->
+    {ok, []}.
+
+%% @doc Trap unknown calls
+handle_call(Message, _From, State) ->
+    {stop, {unknown_call, Message}, State}.
+
+
+%% @doc Trap unknown casts
+handle_cast(Message, State) ->
+    {stop, {unknown_cast, Message}, State}.
+
+
+%% @doc Handling all non call/cast messages
+handle_info(_Info, State) ->
+    {noreply, State}.
+
+%% @doc This function is called by a gen_server when it is about to terminate.
+terminate(_Reason, _State) ->
+    ok.
+
+%% @doc Convert process state when code is changed
+code_change(_OldVsn, State, _Extra) ->
+    {ok, State}.
+
+
+%%====================================================================
+%% support functions
+%%====================================================================
+
+

@@ -1,10 +1,10 @@
 %% @author ${1:Arjan Scherpenisse} ${2:<arjan@scherpenisse.net>}
-%% @copyright 2011 $1 $2
+%% @copyright 2012 $1 $2
 %% Date: ${4:$(format-time-string "%Y-%m-%d")}
 
 %% @doc ${3:Description of the module}
 
-%% Copyright 2011 $1
+%% Copyright 2012 $1
 %%
 %% Licensed under the Apache License, Version 2.0 (the "License");
 %% you may not use this file except in compliance with the License.
