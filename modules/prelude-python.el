@@ -35,12 +35,6 @@
 
 (require 'python)
 
-(defun prelude-python-mode-hook ()
-  (prelude-prog-mode-hook)
-  (electric-indent-mode -1))
-
-(add-hook 'python-mode-hook 'prelude-python-mode-hook)
-
 (provide 'prelude-python)
 
 ;;; prelude-python.el ends here

@@ -1,10 +1,17 @@
 (require 'filecache)
 (add-to-list 'file-cache-filter-regexps "/[.]git")
 (add-to-list 'file-cache-filter-regexps "/[.]svn")
+(add-to-list 'file-cache-filter-regexps "/deps/")
+(add-to-list 'file-cache-filter-regexps "/logs/")
+(add-to-list 'file-cache-filter-regexps "/data/")
+(add-to-list 'file-cache-filter-regexps "\\.beam$")
+(add-to-list 'file-cache-filter-regexps "\\.(jpg|gif|png)$")
 (add-to-list 'file-cache-filter-regexps "\\.beam$")
 
 
+(file-cache-clear-cache)
 (file-cache-add-directory-using-find "~/devel/zotonic")
+(file-cache-add-directory-using-find "~/devel/redgage")
 (file-cache-add-directory-using-find "~/devel/Project-X/projectx")
 ;;(file-cache-add-directory-using-find "~/devel/goldrepublic")
 

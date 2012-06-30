@@ -142,18 +142,18 @@
 
 (set-default 'imenu-auto-rescan t)
 
-;; flyspell-mode does spell-checking on the fly as you type
-(setq ispell-program-name "aspell" ; use aspell instead of ispell
-      ispell-extra-args '("--sug-mode=ultra"))
-(autoload 'flyspell-mode "flyspell" "On-the-fly spelling checker." t)
+;; ;; flyspell-mode does spell-checking on the fly as you type
+;; (setq ispell-program-name "aspell" ; use aspell instead of ispell
+;;       ispell-extra-args '("--sug-mode=ultra"))
+;; (autoload 'flyspell-mode "flyspell" "On-the-fly spelling checker." t)
 
-(defun prelude-turn-on-flyspell ()
-  "Force flyspell-mode on using a positive argument.  For use in hooks."
-  (interactive)
-  (flyspell-mode +1))
+;; (defun prelude-turn-on-flyspell ()
+;;   "Force flyspell-mode on using a positive argument.  For use in hooks."
+;;   (interactive)
+;;   (flyspell-mode +1))
 
-(add-hook 'message-mode-hook 'prelude-turn-on-flyspell)
-(add-hook 'text-mode-hook 'prelude-turn-on-flyspell)
+;; (add-hook 'message-mode-hook 'prelude-turn-on-flyspell)
+;; (add-hook 'text-mode-hook 'prelude-turn-on-flyspell)
 
 ;; enable narrow to region
 (put 'narrow-to-region 'disabled nil)
